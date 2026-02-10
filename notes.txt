@@ -1,0 +1,8 @@
+Know these basics , what and how the spring works?
+
+Spring vs Spring Boot
+@Bean
+Dependency Injectection and ways to implemenent it.
+Maven and gradle building tool
+lombok
+resolving the ambuiguity - qualifiers, primary , conditional on property
