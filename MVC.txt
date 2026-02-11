@@ -1,0 +1,17 @@
+3layerd architecture
+input taking , path variable, param , request body
+mappings - get, post, patch, put, delete
+DTOs
+Complete flow- from component scanning , dispatch servlet, application context, Auto configuration under the hood how it works ?
+Controller <-> DTO <-> Service <-> ENtity <-> Repository
+JPA provider - Hibernate ORM basics
+Basic Crud APP.
+Configure Model Mapper / Map Struct -> for handling the data conversion from DTO to Entity and vice versa
+Validation for (DTO and Entity)
+Custom validation - ( adding custom annotation for the validation)
+
+// Expolore this
+Optinal class ? why ? and when ? 
+@JsonProperty why? 
+Reflection to update partially
+Resposnse Entity for sending the reposnse in better way
