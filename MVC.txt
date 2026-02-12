@@ -15,3 +15,14 @@ Optinal class ? why ? and when ?
 @JsonProperty why? 
 Reflection to update partially
 Resposnse Entity for sending the reposnse in better way
+
+
+#######################
+    Issue faced
+#######################
+
+- some issue of using record for DTO and using Model mapper for conversion together, used normal class for the DTO
+- Did not had to use Json property in my code , it worked fine. find why is that 
+- used builder method to manually update the records , find if any better way / production way ?
+- getting 500 for a resource not found , handle it gracefully !
+
