@@ -1,0 +1,55 @@
+Hibernate ??
+Mapping java pojo class to ra sql tables ! we just have to worry about how to deal with the data
+Heirarchy ? DAO ??
+dialect config in application properties Autodetect !!
+
+what is catalog in db schema ??
+
+seeding the database before app run or specified - data.sql
+
+
+key features of JPA , simple JPA is the impl ⭐️
+-> Entity Management
+-> Query Lang - JPQL for quering Entities
+-> Transactions
+-> Entity Relations -> 1:1, 1:m, m:1, m:m ??
+
+Simple Jpa -> Jpa - > Jpa provider (Hibernate) -> JDBC -> DB
+
+simpleJPA ->  built on top of the JPA , helps in adding DAO methods
+JPA - spcs on managing entity and ORM mapping
+Hibernate -> JPA provider  actual ORM , optimzation in querying 
+JDBC -> query generrated by the HIbernate will be executed using the JDBC.. using not in !!!!!
+
+
+CRUD Repository extends the Repository
+Pagin and Sorting repository extends CRUD Repo
+QueryByExampleExecuter 
+JPA REpository
+
+SimpleJPARepository - concetre class , which implemests all the methods of the JPA Repo
+
+
+##########################################
+Custom Query
+##########################################
+
+1. just by the method names - simple one
+findByTitlte -> we just have to add this in the out entity repo , we dont have to implement it , hiber nate will handle it for us 
+
+There are certain rules for defing this method name - like -> keywords , find by , ready by, get by, query by , exists by , count by , delete by , remove by and so many , never ending !!
+NUmber after first example - findFirst10ByName !! 
+we can also get the distinct 
+AND - OR operators ....
+explore !!! or 
+
+for complex query , we can go with @Query annotation - JPQL or SQL ?/ 
+
+##########################################
+Sorting and pagenation 
+##########################################
+OrderBy in add filed name method name -> but tighty coupled so use sort as in param bu Sort class !!!
+
+
+
+
