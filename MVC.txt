@@ -17,9 +17,9 @@ Reflection to update partially
 Resposnse Entity for sending the reposnse in better way
 
 
-#######################
+############################################################################################
     Handing Exception and sending better API Resposne
-#######################
+############################################################################################
 
 @RestControllerAdvice
 @ExceptionHandler(<Exception>.class) -> define your logic
@@ -28,13 +28,56 @@ Resposnse Entity for sending the reposnse in better way
 #Global Response Handler -> inlcude ApiError object in the ApiResponse with ResposnseEntity
 
 
-#######################
+###################################################################################################################
     Issue faced
-#######################
+###################################################################################################################
 
 - some issue of using record for DTO and using Model mapper for conversion together, used normal class for the DTO
 - Did not had to use Json property in my code , it worked fine. find why is that 
 - used builder method to manually update the records , find if any better way / production way ?
 - was injected "DTOS" - lol
 - getting 500 for a resource not found , handle it gracefully !
+
+
+
+############################################################################################
+    For Practise
+############################################################################################
+
+1. Make a list of all the annotations we have seen so far in the
+Spring Web Framework.
+
+2. Create the following REST endpoints for the following Entity
+Department
+- id
+- title
+- isActive
+- createdAt
+REST APIs:
+GET: /departments
+POST: /departments
+PUT: /departments
+DELETE: /departments
+GET: /departments/{id}
+
+
+3. Write Exception Handling logic for the Department Entity.
+
+4. Add the appropriate fields in the Department and Employee Entities
+so that the following validations can be added:
+@Null, @NotNull, @AssertTrue, @AssertFalse, @Min, @Max, @DecimalMin,
+@DecimalMax, @Negative, @NegativeOrZero, @Positive, @PositiveOrZero,
+@Size, @Digits, @Past, @PastOrPresent, @Future, @FutureOrPresent,
+@Pattern, @Email, @NotEmpty, @NotBlank, @Length, @Range,
+@CreditCardNumber, @URL
+
+5. Create custom Annotation to handle a Prime number input
+6. Create custom Annotation to check if the Password String field
+satisfies the following criteria:
+a. contains one uppercase letter
+b. contains one lowercase letter
+c. contains one special character
+d. minimum length is 10 characters
+
+
 
