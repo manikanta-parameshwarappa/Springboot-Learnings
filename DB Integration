@@ -50,6 +50,9 @@ Sorting and pagenation
 ##########################################
 OrderBy in add filed name method name -> but tighty coupled so use sort as in param bu Sort class !!!
 
+Page, Pageable - page number, page size, sorting options
+PageRequest  impl of the Pageable
+
 
 
 
