@@ -8,13 +8,24 @@ JPA provider - Hibernate ORM basics
 Basic Crud APP.
 Configure Model Mapper / Map Struct -> for handling the data conversion from DTO to Entity and vice versa
 Validation for (DTO and Entity)
-Custom validation - ( adding custom annotation for the validation)
+Custom validation - ( adding custom annotation for the validation) @interface , validated by "our class defination"
 
 // Expolore this
 Optinal class ? why ? and when ? 
 @JsonProperty why? 
 Reflection to update partially
 Resposnse Entity for sending the reposnse in better way
+
+
+#######################
+    Handing Exception and sending better API Resposne
+#######################
+
+@RestControllerAdvice
+@ExceptionHandler(<Exception>.class) -> define your logic
+
+#Global Exception Handler
+#Global Response Handler -> inlcude ApiError object in the ApiResponse with ResposnseEntity
 
 
 #######################
