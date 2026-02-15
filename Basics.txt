@@ -1,8 +1,0 @@
-Know these basics , what and how the spring works?
-
-Spring vs Spring Boot
-@Bean
-Dependency Injectection and ways to implemenent it.  via field injection @AutoWired, via Constructor , @RequiredArgsContructor reduce the code from lombok
-Maven and gradle building tool
-lombok
-resolving the ambuiguity - qualifiers, primary , conditional on property
