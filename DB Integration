@@ -54,5 +54,100 @@ Page, Pageable - page number, page size, sorting options
 PageRequest  impl of the Pageable
 
 
+###############################
+Projection in spring data jpa
+###############################
+n Spring Data JPA, projection is a way to fetch only specific fields from an entity instead of retrieving the entire object. This is useful when:
+
+You don’t need all the columns of a table.
+
+You want to improve performance by reducing data transfer.
+
+You want to expose only certain fields in APIs.
+
+Types of Projections
+Interface-based projection  
+Define an interface with getters for the fields you want.
+
+Class-based (DTO) projection  
+Use a constructor expression to map query results into a DTO.
+
+Dynamic projection  
+Let the repository method decide which projection to use at runtime.
+
+some aggreate query using the projection
+
+
+###############################
+LIFE CYCLE OF THE DATA JPA
+###############################
+
+
+
+Entity Manager
+Entity -> Transient (gc) -> Persistent() -> Removed state
+Persistent() -> detached state > can be go back to persistent state
+
+Persistence context. + @transactional context
+
+
+
+Mappings
+1:1
+1:m
+m:1
+m:m
+
+Bidrectional , Unidirectional ??
+
+Bidirectional - owning side and inverse side $$ ingle sourceo of truth !!
+
+
+Inverse Side 
+@OneToOne(mapped_by = "invserse_table_name"  )
+
+Owning side - join column - "change the behavior of the insurance_id (inverse table id)"
+@JoinColumn(name= "patient_insurace_id" , .....)
+
+
+##################### IGN
+patient 
+@OneToMany(mapped_by= "patient")
+!!!!!! always use mapped_by or else hibernate will creat ethe joiing table ,which we dont want
+Set<Appointment> 
+List<Appointment>
+
+
+appointment , owning table
+
+@ManyToOne()
+@JoinColumn(name="patient_id")
+
+
+
+Many to Many - . we should have the joing table
+
+
+
+#######cascading !!!!!!!
+
+JPA BUDDY PLUGIN
+
+JUNIT
+@ManyToOne(CASCADE = ALL, CREAT, UPDATE , MERGE , DEELTE)!!!
+
+
+fetch = FetchType.Lazy -> doees not loads the 
+FetchType.Eager -> loads every child assocations
+
+Orphan removal ? when the paranet chhild association of entries is gone , we want to remove the child ass entries 
+
+
+CASCADE TYPE REMVE and Orphan Removal true diff????
+
+Custom query to solve the n+1 issue
+
+
+
 
 
