@@ -148,6 +148,11 @@ CASCADE TYPE REMVE and Orphan Removal true diff????
 Custom query to solve the n+1 issue
 
 
+##########################################
+@ElementCollection ?
+##########################################
+
+
 
 
 
