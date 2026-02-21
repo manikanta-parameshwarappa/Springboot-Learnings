@@ -38,6 +38,29 @@ RESTCLIENT - upgraded v of restTemplate
 get,post,delete.....
 handle error specifically & gracefully from the restclient
 
-
 WebClient - get data in non blocking manner, WebFlux ?
 ##########################################
+
+
+
+##########################################
+    LOGGING
+##########################################
+
+
+--loging frameworks
+slf4j⭐️ comes with spring starter web, log4j, java.util.logging (JUL) , tiny log, logback , etc ......
+
+1. Log Error
+2. Format Error
+3. Handler
+
+
+Log Level
+
+Fatal, Error, Warn, Info, Debug, Trace
+
+
+
+
+
