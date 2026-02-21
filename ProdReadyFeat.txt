@@ -1,0 +1,22 @@
+production ready features
+
+Dev tools - some depnedncy to auto relod sever - not reliable
+
+Auditing
+@EntityListeners(AudingEntityListeners.class) make it super class(@MappedSuperClass) or implement in any class + add @EnableJpaAuditing annotation to the config class
+
+@CreatedDate
+private LocalDateTime createdDate
+
+@LastModifiedDate
+private LocalDateTime updatedDate
+
+@CreatedBy
+private String createdBy
+
+@LastModifiedBy
+private String updatedBy
+
+############################ AUTH
+
+implement AuditorAware<> class to get the store the details of user - hands on in spring security module
