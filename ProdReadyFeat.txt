@@ -20,3 +20,14 @@ private String updatedBy
 ############################ AUTH
 
 implement AuditorAware<> class to get the store the details of user - hands on in spring security module
+
+
+// Life cycle hooks for db
+
+@PrePersist - hook
+void beforeSave() {}
+
+@PreUpdate , etc ....
+
+
+// Hibernate Envers - Advance Auditing
