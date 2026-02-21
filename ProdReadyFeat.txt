@@ -31,3 +31,13 @@ void beforeSave() {}
 
 
 // Hibernate Envers - Advance Auditing
+
+
+##########################################
+RESTCLIENT - upgraded v of restTemplate
+get,post,delete.....
+handle error specifically & gracefully from the restclient
+
+
+WebClient - get data in non blocking manner, WebFlux ?
+##########################################
