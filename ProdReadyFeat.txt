@@ -62,5 +62,12 @@ Fatal, Error, Warn, Info, Debug, Trace
 
 
 
+####################################################################################
+    ACTUATORS - Insights into application behavior and performance !!
+####################################################################################
+
+spring-boot-starter-actuator dependency!!
 
 
+-> status of the microservice :  up / down ?
+-> basically just configuring , no implementation , implmeneted by spring dependency !!, usefull to get some insights (beans, configprops, health, info, conditions(auto configuration),metrics,scheduled jobs, mappings ...... )
