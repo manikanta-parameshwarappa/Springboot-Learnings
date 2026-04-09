@@ -42,3 +42,20 @@ Common Implementations:
 • SCryptPasswordEncoder
 
 ======================================================================================================
+
+
+
+
+Flow
+
+Request -> dispatcher servlet -> securty filter chain -> authentication manager (based on diff provider) dao auth provider etc .. ->  for dao auth provider to work ( we need to provide - user details service, and password encoder)
+
+
+
+
+
+
+
+
+
+
