@@ -51,11 +51,18 @@ Flow
 Request -> dispatcher servlet -> securty filter chain -> authentication manager (based on diff provider) dao auth provider etc .. ->  for dao auth provider to work ( we need to provide - user details service, and password encoder)
 
 
+###########
+
+-> JWT token - subject, claims, secret key , algorithm. 
+-> Stateless Authentication
+-> Access Token and Refresh Tokens
+-> Dont use local storage for storing the tokens
+-> Use React context memory , and http only cokkie for the saving the refresh tokens
 
 
 
+###########
 
-
-
-
+-> Authorization - can be handled with the help of AOP , aspect oriented programming
+-> @preauthorize annnotation helps to run some code before serving the request , in which we can check the permisions for particular user/request before serving it.
 
